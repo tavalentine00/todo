@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@layer base {
+  :root {
+    --app-bg: #f4f4f8;
+    --app-fg: #0f172a;
+    --app-border: #e2e8f0;
+    --app-header: #ffffff;
+    --app-card: #ffffff;
+    --app-muted: #64748b;
+  }
+
+  .dark {
+    --app-bg: #0c0a12;
+    --app-fg: #f1f5f9;
+    --app-border: #1e293b;
+    --app-header: #12101c;
+    --app-card: #161322;
+    --app-muted: #94a3b8;
+  }
+
+  html,
+  body {
+    @apply antialiased;
+    background: var(--app-bg);
+    color: var(--app-fg);
+  }
+
+  .using-mouse * {
+    outline: none !important;
+  }
+}
